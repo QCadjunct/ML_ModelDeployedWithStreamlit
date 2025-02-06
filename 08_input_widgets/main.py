@@ -41,8 +41,8 @@ st.divider()
 
 
 # Slider
-st.divider()
-
+a= st.slider("Slider", 10, 121)
+st.text(a)
 
 # Text input
 st.divider()

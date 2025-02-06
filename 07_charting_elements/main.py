@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/sample.csv")
 
+df["year"] = df["year"].astype(str)
+
 # Streamlit line plot
 st.line_chart(df, x="year", y=["col1", "col2", "col3"])
 

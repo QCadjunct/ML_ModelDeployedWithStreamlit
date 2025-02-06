@@ -27,12 +27,14 @@ pd.read_csv(my_csv_file)
 st.text("Some text")
 
 # LaTeX
-st.latex("x = 2^2")
+st.latex("x = 2^.5")
 
 # Divider
 st.text('Text above divider')
 st.divider()
 st.text('Text below divider')
 
-#st.write
+# Write
+
 st.write('Some text')
+st.selectbox('Select', ['a', 'b', 'c'])
