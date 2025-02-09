@@ -17,10 +17,12 @@ col3.write(slider)
 # Tabs
 df = pd.read_csv("data/sample.csv")
 
+df["year"] = df["year"].astype(str)
+
 tab1, tab2 = st.tabs(["Line plot", "Bar plot"])
 
 with tab1:
-    tab1.write("A line plot")
+    tab1.write("A show marko line plot")
     st.line_chart(df, x="year", y=["col1", "col2", "col3"])
 
 with tab2:
